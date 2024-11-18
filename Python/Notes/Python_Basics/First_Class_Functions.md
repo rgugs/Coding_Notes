@@ -35,7 +35,7 @@ Why should we create higher order functions? It hides complexity and makes code 
 
 ## Higher Order Function Examples
 
-Commonly used built in higher order functions in Python include map(), filter(), reduce(), zip(), and sorted(). You can also create custom higher order functions, such as the custom map function example below. **Lambdas** (unnamed functions with a single expression) are commonly used in higher order functions.
+Commonly used built in higher order functions in Python include map(), filter(), reduce(), zip(), and sorted(). You can also create custom higher order functions, such as the custom map function example below. **Lambdas** (unnamed functions with a single expression) are commonly used in higher order functions. Other real world uses include logging or timing higher functions.
 
 ### Custom Map
 
@@ -60,7 +60,7 @@ squares = my_map(square, num_list)  # Output: [1, 4, 9, 16, 25]
 cubes = my_map(cube, num_list)  # Output: [1, 8, 27, 64, 125]
 ```
 
-### Built in Filter
+### Built in Filter()
 
 ```python
 numbers = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -68,6 +68,39 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 even_numbers = filter(lambda x: x % 2 == 0, numbers)
 
 print(list(even_numbers))  # Output: [2, 4, 6, 8]
+```
+
+### Logging Example
+
+This example is a **Closure**, which will be covered in depth in a different lesson.
+
+```python
+def logger(msg):
+    def log_message():
+        print(f'Log: {msg}')
+    return log_message
+
+log_hi = logger('Hi!')
+log_hi()    # Prints 'Log: Hi!'
+```
+
+In the code above, we've created a higher order function called `logger` that has a 2nd function inside it, called `log_message`. When you write `log_hi = logger('Hi!')` you are assigning the interior function to the variable while passing the message through the outer function, so the outer function runs at the time of assignment, but not the interior function. When you write `log_hi()`, the `()` tell python to run the function, and you get the final out put with the log message and the previously input text.
+
+### Tag Wrapping
+
+This is an example of using a higher function to set HTML brackets.
+
+```python
+def html_tag(tag):
+    def wrap_text(msg):
+        print(f'<{tag}>{msg}</{tag}>')
+    return wrap_text
+
+print_h1 = html_tag('h1')
+print_p = html_tag('p')
+
+print_h1('Test Headline')   # Output: <h1>Test Headline</h1>
+print_p('Test Paragragh')   # Output: <p>Test Paragraph</p>
 ```
 
 ## Sources
