@@ -124,3 +124,6 @@ https://dev.to/omrigm/why-you-should-use-python-data-classes-48po
 
 Abhishek Jain
 https://medium.com/@abhishekjainindore24/embracing-abstraction-a-dive-into-abstract-classes-in-python-0faf6d83948d
+
+Natalia Tsarkova - Why do we need Decorators?
+https://medium.com/exness-blog/why-do-we-need-decorators-use-cases-13f19ca5d237
