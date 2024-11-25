@@ -4,7 +4,7 @@
 
 <table>
 <tr>
-<td>Example 1</td><td>Example 2</td>
+<th>Example 1</th><th>Example 2</th>
 </tr>
 <tr>
 <td>
@@ -23,3 +23,17 @@ Example 2 code
 </td>
 </tr>
 </table>
+
+## Markdown Table
+
+| foo | bar |
+| --- | --- |
+| baz | bim |
+| `boo` | big |
+
+or to align text
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
