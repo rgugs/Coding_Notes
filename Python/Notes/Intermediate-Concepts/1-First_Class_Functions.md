@@ -3,7 +3,7 @@
 What does it mean when something is referred to as a first class citizen in programming, and why is are we learning about it?
 
 > **First Class Citizen (Programming)** - Entity which supports all the operations generally available to other entities. These operations typically include being passed as an argument, returned from a function, and assigned to a variable.
->  
+>
 > **First Class Function** - When a function is treated as a first class citizen in programming.
 
 Unstanding that we can do all the things you can do with any other variable you might be familiar with allows us to create code that is more flexible and modular. This makes our code less likely to break and easier to test. First order functions are used in both Object Oriented Programming and Functional Programming.
@@ -106,10 +106,10 @@ print_p('Test Paragragh')   # Output: <p>Test Paragraph</p>
 ## Sources
 
 Corey Schafer YouTube - First Class Functions
-https://www.youtube.com/watch?v=kr0mpwqttM0&t=5s
+<https://www.youtube.com/watch?v=kr0mpwqttM0&t=5s>
 
 Free Code Camp
-https://www.freecodecamp.org/news/first-class-functions-and-closures-in-python/
+<https://www.freecodecamp.org/news/first-class-functions-and-closures-in-python/>
 
 Python Documentation
-https://docs.python.org/3/library/functions.html
+<https://docs.python.org/3/library/functions.html>

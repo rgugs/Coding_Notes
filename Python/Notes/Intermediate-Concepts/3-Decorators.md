@@ -122,19 +122,29 @@ As you can see, both functions with and without arguments ran correctly using th
 4. functools.cache
 5. @dataclass
 
+### @property
+
+### @staticmethod
+
+### @classmethod
+
+### functools.cache
+
+### @dataclass
+
 ## Sources
 
 Corey Schafer - Decorators
-https://www.youtube.com/watch?v=FsAPt_9Bf3U&t=1s
+<https://www.youtube.com/watch?v=FsAPt_9Bf3U&t=1s>
 
 Omri Grossman - Why Use Python Dataclass (decorator)
-https://dev.to/omrigm/why-you-should-use-python-data-classes-48po
+<https://dev.to/omrigm/why-you-should-use-python-data-classes-48po>
 
 Abhishek Jain
-https://medium.com/@abhishekjainindore24/embracing-abstraction-a-dive-into-abstract-classes-in-python-0faf6d83948d
+<https://medium.com/@abhishekjainindore24/embracing-abstraction-a-dive-into-abstract-classes-in-python-0faf6d83948d>
 
 Natalia Tsarkova - Why do we need Decorators?
-https://medium.com/exness-blog/why-do-we-need-decorators-use-cases-13f19ca5d237
+<https://medium.com/exness-blog/why-do-we-need-decorators-use-cases-13f19ca5d237>
 
 Estefania Cassingena Navone
-https://www.freecodecamp.org/news/python-property-decorator/
+<https://www.freecodecamp.org/news/python-property-decorator/>

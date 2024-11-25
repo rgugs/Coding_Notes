@@ -37,10 +37,10 @@ log_hi()    # Prints 'Log: Hi!'
 ## Sources
 
 Geeks for Geeks - Scope Review
-https://www.geeksforgeeks.org/scope-resolution-in-python-legb-rule/
+<https://www.geeksforgeeks.org/scope-resolution-in-python-legb-rule/>
 
 Corey Schafer - Closures
-https://www.youtube.com/watch?v=swU3c34d2NQ&t=8s
+<https://www.youtube.com/watch?v=swU3c34d2NQ&t=8s>
 
 Corey Schafer YouTube - First Class Functions
-https://www.youtube.com/watch?v=kr0mpwqttM0&t=5s
+<https://www.youtube.com/watch?v=kr0mpwqttM0&t=5s>
