@@ -60,9 +60,7 @@ del animal_1.age
 
 ### Methods
 
-So far we've covered adding *attribute refernces* to a class, but functions can also be attribute references. When
-functions are placed inside a class, they are referred to as **methods** and are limited in scope compared to functions outside the Class.
-They work on a specific object of the Class and use dot notation, the same way you can access other object attributes.
+So far we've covered adding *attribute refernces* to a class, but functions can also be attribute references. When functions are placed inside a class, they are referred to as **methods** and are limited in scope compared to functions outside the Class. They work on a specific instance of the Class and use dot notation, the same way you can access other object attributes.
 
 ```python
 class Animal:
@@ -72,44 +70,15 @@ class Animal:
         print('Wilbur is sleeping...')
 
 animal_1 = Animal()
-animal_1.sleep()
+animal_1.sleep()    # Output: prints 'Wilbur is sleeping...' to terminal
 ```
 
-<details>
-<summary> <h5>Function vs Method Example (Click arrow to expand)</h5></summary>
-<!-- <br> -->
-*Something that confused me early on whas the difference between functions and methods. Methods are functions that exist inside a class, and the method is specifically being called on the instance with dot notation. Sorted() and list.sort() are examples of functions and methods. When trying to determine if something is a function or method, look at how it is written.*
+## Instantiation
 
-### Sorted()
-
-Sorted() is a built in Python function and can take **any iterable** (list, set, dictionary, tuple) and return the values as a new sorted list,
-so the original iterable is not changed. If you pass a non list iterable into Sorted(), you must **cast** it back into the desired format if
-you don't want to end up with a list.
-
-### List.sort()
-
-In comparison, the list.sort() method only works on lists and also sorts them in place, meaning it will change the original variable.
-If you don't want that to happen, you will have to first use list.copy() to copy the list to a new variable. You can apply multiple
-methods to an object in a single line, however you need to consider what each method returns. In the case below, you can't use
-chaining because you need .sort() to apply to the new_list object, not the original list object.
+So far we've set up class attributes that any instance of that class can access, but it is not dynamic. To create a class that can take different variable at creation time, we need to use one of the **Magic Methods** associated with classes. These are also called **Dunder Methods**, for double underscore, or **Special Methods**.
 
 ```python
-# Sorted()
-new_list = sorted(list)
-
-# List.sort()
-new_list = list.copy()
-new_list.sort()
-```
-
-</details>
-
-### Instantiation
-
-So far we've set up class attributes that any object made from that class can access, but it is not dynamic. To create a class that can take different variable at creation time, we need to use one of the Magic Methods associated with classes. These are also called Dunder Methods, for double underscore, or Special Methods.
-
-```python
-# Initialize Dunder/Magic Method
+# Initialize Dunder/Magic/Special Method
 class Animal:    
     def __init__(self):
         pass
@@ -138,9 +107,9 @@ animal_1 = Animal('pig', 'Wilbur')
 animal_2 = Animal('goat', 'Freddie')
 animal_3 = Animal('dog', 'Lily')
 
-print(f'{animal_1.name} is a {animal_1.type}.')
-print(f'{animal_2.name} is a {animal_2.type}.')
-print(f'{animal_3.name} is a {animal_3.type}.')
+print(f'{animal_1.name} is a {animal_1.type}.') # Output: 'Wilbur is a pig.'
+print(f'{animal_2.name} is a {animal_2.type}.') # Output: 'Freddie is a goat.'
+print(f'{animal_3.name} is a {animal_3.type}.') # Output: 'Lily is a dog.'
 ```
 
 ## Sources
