@@ -114,6 +114,14 @@ display_info('John', 25)
 
 As you can see, both functions with and without arguments ran correctly using the same decorator function.
 
+## Useful Built In Decorators
+
+1. @property
+2. @staticmethod
+3. @classmethod
+4. functools.cache
+5. @dataclass
+
 ## Sources
 
 Corey Schafer - Decorators
@@ -127,3 +135,6 @@ https://medium.com/@abhishekjainindore24/embracing-abstraction-a-dive-into-abstr
 
 Natalia Tsarkova - Why do we need Decorators?
 https://medium.com/exness-blog/why-do-we-need-decorators-use-cases-13f19ca5d237
+
+Estefania Cassingena Navone
+https://www.freecodecamp.org/news/python-property-decorator/
