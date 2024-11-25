@@ -6,7 +6,9 @@
 
 `git add <filepath>` - Adds specific file with untracked changes to index
 
-`git reset .` - Resets all added files with changes that have been added to the index
+`git rm <filepath>` - Removes specific file with untracked changes to index
+
+`git reset` - Resets all added files with changes that have been added to the index
 
 `git reset <filepath>` - Resets specific file with changes that has been added to index
 
