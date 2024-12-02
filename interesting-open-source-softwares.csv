@@ -1,0 +1,9 @@
+Software, Use, Replaces, Link
+Dokku, PaaS - complete development and deployment environment in the cloud, Heroku, <https://github.com/dokku/dokku>
+Hoppscotch, API development, Postman, <https://github.com/hoppscotch/hoppscotch>
+Supertokens, Open Source Authentication, Firebase/auth0, <https://github.com/supertokens/supertokens-core>
+Supabase, Mobile and web app platform | Firebase, <https://github.com/supabase/supabase>
+Meilisearch, Open source AI search engine in Rust, Elastisearch, <https://github.com/meilisearch/meilisearch>
+Zinc, Lightweight search engine in Go, Elastisearch, <https://github.com/zincsearch/zincsearch>
+tRPC, Typesafe API creation, REST or GraphQL, <https://github.com/trpc/trpc>
+NocoDB, Database to smart spreadsheet, Airtable, <https://github.com/nocodb/nocodb>
