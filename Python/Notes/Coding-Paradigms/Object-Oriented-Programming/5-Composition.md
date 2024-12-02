@@ -1,2 +1,0 @@
-# Composition with Classes
-

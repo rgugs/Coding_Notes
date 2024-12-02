@@ -1,0 +1,91 @@
+{
+  "lists": [
+    {
+      "id": "a0f76957-42db-419c-8539-efa6d5d41a07",
+      "title": "To Do",
+      "cards": [
+        {
+          "id": "09e3f709-a3c4-4fa0-9f01-8890cbcbb90f",
+          "listId": "a0f76957-42db-419c-8539-efa6d5d41a07",
+          "title": "Composition",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "b42f1ca4-6b25-416d-b274-d527bd23130d",
+          "listId": "a0f76957-42db-419c-8539-efa6d5d41a07",
+          "title": "Inheritance",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "5f0f591e-aada-4143-a58e-a9fc8ee4dd34",
+          "listId": "a0f76957-42db-419c-8539-efa6d5d41a07",
+          "title": "Decorators",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "de05a6f2-070f-43bc-abd0-8ac6a171e414",
+          "listId": "a0f76957-42db-419c-8539-efa6d5d41a07",
+          "title": "Special/Dunder methods",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "id": "f9c0548c-100e-4981-8221-1e0849065de4",
+      "title": "In Progress",
+      "cards": []
+    },
+    {
+      "id": "5958f584-8507-4f8b-a770-6ae6309f78fb",
+      "title": "Finished",
+      "cards": [
+        {
+          "id": "9f5b4a86-32d5-43c2-9e37-8ec16c2bf26f",
+          "listId": "5958f584-8507-4f8b-a770-6ae6309f78fb",
+          "title": "Encapsulation",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "97aa08c6-95e0-47bd-ac5e-638617c3cafa",
+          "listId": "5958f584-8507-4f8b-a770-6ae6309f78fb",
+          "title": "Classes and Instances",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "c0691db3-3b44-4a53-b2a2-1c2982d740b6",
+          "listId": "5958f584-8507-4f8b-a770-6ae6309f78fb",
+          "title": "Class and Instance variables",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
+    }
+  ],
+  "archive": {
+    "lists": [],
+    "cards": []
+  },
+  "settings": {
+    "labels": []
+  }
+}
