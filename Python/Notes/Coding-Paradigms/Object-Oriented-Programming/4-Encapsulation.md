@@ -8,6 +8,7 @@
   - [Protected](#protected)
   - [Private](#private)
   - [Dunder/Magic/Special Methods vs Name Mangling](#dundermagicspecial-methods-vs-name-mangling)
+  - [Abstraction](#abstraction)
   - [Sources](#sources)
 
 <!-- /code_chunk_output -->
@@ -62,6 +63,12 @@ In the code above, you can see that we can still see all the types of attributes
 ## Dunder/Magic/Special Methods vs Name Mangling
 
 Dunder Methods also use double underscore, but should not be confused with name mangling. They refer to specific class methods that start and end with double underscores, including `__init__()`, `__repr__()`, and `__eq__()`. These functions are already set for the built in python class types, but must be set by the developer for custom classes if that functionality is desired. They are used to customize the behavior of classes.
+
+## Abstraction
+
+Abstraction is slightly different from Encapsulation. Abstraction focuses on creating simple interfaces for complex behavior. This could be done in the form of decorators that generate a lot of boilerplate code for you such as the @dataclass decorator or importing a library like random to generate random numbers (quite difficult to do performantly at a base level) or rasterio, a wrapper for GDAL that simplifies some of the complexity found in using GDAL and OGR directly. We are almost always doing abstraction and encapsulation simultaneously.
+
+It is crucial to get abstractions right when writing code for other developers as changing the code later to fix bugs may break code all over the world for widely used packages.
 
 ## Sources
 
