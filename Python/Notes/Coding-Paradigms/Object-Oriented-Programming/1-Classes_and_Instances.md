@@ -1,9 +1,26 @@
 # Classes
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Classes](#classes)
+  - [Definitions](#definitions)
+  - [Building a Python Class](#building-a-python-class)
+    - [Attribute References](#attribute-references)
+    - [Methods](#methods)
+    - [Function vs Method](#function-vs-method)
+      - [Sorted()](#sorted)
+      - [List.sort()](#listsort)
+  - [Instantiation](#instantiation)
+  - [Sources](#sources)
+
+<!-- /code_chunk_output -->
+
 ## Definitions
 
 > *Class* - A "blueprint" that defines the kind of data the associated objects contain and any logic sequences that can manipulate that type of object.
-> 
+>
 > *Object* - A data field that has unique attributes and behavior (eg.The number 12 or the name Fred.)
 >
 > *Instance* - Considered synonymous with objects, instances refer to an object created with a specific class type. (eg. 12 -> integer (number) or Fred -> string (name))
@@ -73,6 +90,32 @@ animal_1 = Animal()
 animal_1.sleep()    # Output: prints 'Wilbur is sleeping...' to terminal
 ```
 
+### Function vs Method
+
+Something that confused me early on whas the difference between functions and methods and how to use them. Methods are functions that exist inside a class, and the method is specifically being called on the instance with dot notation. Sorted() and list.sort() are examples of functions and methods. When trying to determine if something is a function or method, look at how it is written.
+
+#### Sorted()
+
+Sorted() is a built in Python function and can take **any iterable** (list, set, dictionary, tuple) and return the values as a new sorted list,
+so the original iterable is not changed. If you pass a non list iterable into Sorted(), you must **cast** it back into the desired format if
+you don't want to end up with a list.
+
+#### List.sort()
+
+In comparison, the list.sort() method only works on lists and also sorts them in place, meaning it will change the original variable.
+If you don't want that to happen, you will have to first use list.copy() to copy the list to a new variable. You can apply multiple
+methods to an object in a single line, however you need to consider what each method returns. In the case below, you can't use
+chaining because you need .sort() to apply to the new_list object, not the original list object.
+
+```python
+# Sorted()
+new_list = sorted(list)
+
+# List.sort()
+new_list = list.copy()
+new_list.sort()
+```
+
 ## Instantiation
 
 So far we've set up class attributes that any instance of that class can access, but it is not dynamic. To create a class that can take different variable at creation time, we need to use one of the **Magic Methods** associated with classes. These are also called **Dunder Methods**, for double underscore, or **Special Methods**.
@@ -115,9 +158,10 @@ print(f'{animal_3.name} is a {animal_3.type}.') # Output: 'Lily is a dog.'
 ## Sources
 
 Corey Schafer
-https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=40
+<https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=40>
 
 Boot.dev
+<https://www.boot.dev/lessons/ea171b42-0d9b-43d2-a136-4e2e89227f9e>
 
 TechTarget
-https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP#:~:text=An%20object%20can%20be%20defined,and%20actively%20updated%20or%20maintained.
+<https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP#:~:text=An%20object%20can%20be%20defined,and%20actively%20updated%20or%20maintained.>

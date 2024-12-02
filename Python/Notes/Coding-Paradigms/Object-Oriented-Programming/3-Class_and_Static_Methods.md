@@ -1,5 +1,17 @@
 # Class and Static Methods
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Class and Static Methods](#class-and-static-methods)
+  - [Class Methods as Alternative Constructors](#class-methods-as-alternative-constructors)
+  - [Static Methods](#static-methods)
+  - [Sources](#sources)
+
+<!-- /code_chunk_output -->
+
+
 Regular methods in a class automatically take the instance as the first argument (self).
 
 How do we change it so it takes the class first? Turn a regular method into a **class method**. To do this, we'll use a decorator.
