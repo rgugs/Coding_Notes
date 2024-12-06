@@ -15,3 +15,5 @@
 `git commit -m "ADD MESSAGE HERE"` - Adds commit description to all files about to be pushed.
 
 `git push origin main` Pushes main branch of local to main branch of remote repository
+
+`git rm --cached <file>` Removes the file from the index while keeping it on your local file system
