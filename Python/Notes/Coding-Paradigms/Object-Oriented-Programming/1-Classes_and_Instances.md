@@ -92,28 +92,36 @@ animal_1.sleep()    # Output: prints 'Wilbur is sleeping...' to terminal
 
 ### Function vs Method
 
-Something that confused me early on whas the difference between functions and methods and how to use them. Methods are functions that exist inside a class, and the method is specifically being called on the instance with dot notation. Sorted() and list.sort() are examples of functions and methods. When trying to determine if something is a function or method, look at how it is written.
+Something that confused me early on was the difference between functions and methods and how to recognize and use them. All methods are functions, but not all functions are methods. Methods are functions that exist inside a class, and the method is specifically being called on the instance with dot notation. Sorted() and list.sort() are examples of a functions and method, respectively, that accomplish similar tasks. When trying to determine if something is a function or method, look at how it is written. If you are using dot notation `list_example.sort()`, it's a method, and you are applying that method specifically to that instance of a list object. (Datatypes in Python are all objects made with that specific datatype class.) If the datatype you are trying to sort is inside the parentheses instead of using dot notation like `new_list = sorted(list_example)`, you are applying a function that is outside of a class.
 
 #### Sorted()
 
-Sorted() is a built in Python function and can take **any iterable** (list, set, dictionary, tuple) and return the values as a new sorted list,
-so the original iterable is not changed. If you pass a non list iterable into Sorted(), you must **cast** it back into the desired format if
-you don't want to end up with a list.
+Sorted() is a built in Python function and can take **any iterable datatype** (list, set, dictionary, tuple) and return the values as a new sorted list, so the original iterable object is not changed. If you pass a non list iterable into Sorted(), you must assign it to a new variable and then **cast** it back into the desired datatype format if you don't want to end up with a list.
+
+>This is an example of **abstraction**, where it takes the relatively common task of inputing a data type, converting it to a list, sorting it, and then returning the list and combines it into a single built in function instead of developers having to write their own versions of that over and over again.
 
 #### List.sort()
 
-In comparison, the list.sort() method only works on lists and also sorts them in place, meaning it will change the original variable.
-If you don't want that to happen, you will have to first use list.copy() to copy the list to a new variable. You can apply multiple
-methods to an object in a single line, however you need to consider what each method returns. In the case below, you can't use
-chaining because you need .sort() to apply to the new_list object, not the original list object.
+In comparison, the list.sort() method only works on lists and also sorts them in place, meaning it will change the original variable. If you don't want that to happen, you will have to first use list.copy() to copy the list to a new variable. You can apply multiple methods to an object in a single line, however you need to consider what each method returns. In the case below, you can't use chaining because you need .sort() to apply to the new_list object, not the original list object.
 
 ```python
-# Sorted()
-new_list = sorted(list)
+cars = ['BMW', 'Toyota', 'Honda', 'Audi']
 
-# List.sort()
-new_list = list.copy()
-new_list.sort()
+new_list = sorted(cars)
+
+print(f'Original list: {cars}')    # Original list: ['BMW', 'Toyota', 'Honda', 'Audi']
+print(f'New list 1: {new_list}')    # New list 1: ['Audi', 'BMW', 'Honda', 'Toyota']
+
+new_list2 = cars.copy().sort()
+
+print(f'Original list: {cars}')     # Original list: ['BMW', 'Toyota', 'Honda', 'Audi']
+print(f'New list 2: {new_list2}')   # New list 2: None
+
+new_list3 = cars.copy()
+new_list3.sort()
+
+print(f'Original list: {cars}')     # Original list: ['BMW', 'Toyota', 'Honda', 'Audi']
+print(f'New list 3: {new_list3}')   # New list 3: ['Audi', 'BMW', 'Honda', 'Toyota']
 ```
 
 ## Instantiation
