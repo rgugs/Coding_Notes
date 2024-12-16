@@ -1,5 +1,16 @@
 # Python Closures
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Python Closures](#python-closures)
+  - [Scope in Python Review](#scope-in-python-review)
+  - [Closure Walkthrough](#closure-walkthrough)
+  - [Sources](#sources)
+
+<!-- /code_chunk_output -->
+
 **Closure** - Function object that remembers values in enclosing scopes even if they are not present in memory. **--Better Definition--** is a nested function that allows us to access variables of the outer function even after the outer function is closed.
 
 ## Scope in Python Review

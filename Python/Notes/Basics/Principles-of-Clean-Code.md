@@ -1,5 +1,21 @@
 # Principals of Clean Code - IN PROGRESS
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Principals of Clean Code - IN PROGRESS](#principals-of-clean-code---in-progress)
+  - [What is Clean Code?](#what-is-clean-code)
+    - [Clean Code DOES NOT](#clean-code-does-not)
+    - [Clean Code DOES](#clean-code-does)
+    - [DRY Code](#dry-code)
+    - [KISS](#kiss)
+    - [YAGNI](#yagni)
+  - [Coding Paradigms](#coding-paradigms)
+  - [Sources](#sources)
+
+<!-- /code_chunk_output -->
+
 ## What is Clean Code?
 
 Clean code refers to the following different design patterns to help keep code organized and easy to read by developers.

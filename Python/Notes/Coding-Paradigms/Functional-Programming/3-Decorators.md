@@ -1,5 +1,26 @@
 # Decorators : ***IN PROGRESS***
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Decorators : ***IN PROGRESS***](#decorators--in-progress)
+  - [Review First Class Functions and Closures](#review-first-class-functions-and-closures)
+    - [Closure Example](#closure-example)
+  - [What is a Decorator?](#what-is-a-decorator)
+    - [Decorators without Arguments Example](#decorators-without-arguments-example)
+    - [The @ Syntax](#the--syntax)
+    - [Decorators with Arguments Example](#decorators-with-arguments-example)
+  - [Useful Built In Decorators](#useful-built-in-decorators)
+    - [@property](#property)
+    - [@staticmethod](#staticmethod)
+    - [@classmethod](#classmethod)
+    - [functools.cache](#functoolscache)
+    - [@dataclass](#dataclass)
+  - [Sources](#sources)
+
+<!-- /code_chunk_output -->
+
 Decorators are a feature in Python that I only recently started to see as I moved into more intermediate usage. In my case, I was working through learning OOP (Object Oriented Programming) in Python and I kept running into examples using @dataclass and @abstractmethod. What are these fancy things, I wondered. I finally found a really clear video explaining the what, how, and why of decorators in Corey Schafer's Decorator's video. It was made in 2016, but as of now (11/18/2024) it still holds true and really helped me work through this topic so I can get back to learning OOP.
 
 ## Review First Class Functions and Closures

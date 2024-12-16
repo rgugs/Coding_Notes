@@ -12,7 +12,6 @@
 
 <!-- /code_chunk_output -->
 
-
 When we wrote our 1st class, we used class variables, and with the init method we can now make instance variables. What is the difference? Class variable are the same for every instance while instance variable are unique to each instance. 
 
 There are a few pitfalls you need to watch out for when using this type of logic. Let's say we want to make a class of Dog. Every dog can learn tricks, so we make a class variable list of tricks. This is wrong. Why? Coding it like this would mean that every dog created from this class shares this same list of tricks. This could be an interesting use of of a class variable for a telepathic alien dog race, but it not how we expect it to work here on Earth. Instead, create the tricks list as an instance variable.

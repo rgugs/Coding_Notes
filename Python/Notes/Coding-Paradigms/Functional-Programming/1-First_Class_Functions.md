@@ -1,5 +1,20 @@
 # First Class Functions in Python
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [First Class Functions in Python](#first-class-functions-in-python)
+  - [Higher Order Functions](#higher-order-functions)
+  - [Higher Order Function Examples](#higher-order-function-examples)
+    - [Custom Map](#custom-map)
+    - [Built in Filter()](#built-in-filter)
+    - [Logging Example](#logging-example)
+    - [Tag Wrapping](#tag-wrapping)
+  - [Sources](#sources)
+
+<!-- /code_chunk_output -->
+
 What does it mean when something is referred to as a first class citizen in programming, and why is are we learning about it?
 
 > **First Class Citizen (Programming)** - Entity which supports all the operations generally available to other entities. These operations typically include being passed as an argument, returned from a function, and assigned to a variable.
